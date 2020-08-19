@@ -1,0 +1,85 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.right {
+    background-color: #2E2E2E;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    justify-content: center;
+    align-items: center;
+}
+
+.imageLogo {
+    width: 153px;
+}
+
+.locationMap {
+    width: 502px;
+}
+
+.textLogo {
+    margin-top: -100px;
+}
+
+.inputs {
+    margin-top: 29px;
+}
+
+.inputText {
+    width: 400px;
+    border: none;
+    border-bottom: 6px solid #767676;
+    // margin-left: 30px;
+    outline: none;
+    height: 37px;
+    font-size: 23px;
+    color: #767676;
+    opacity: 1;
+}
+
+.inputText::placeholder {
+    font-size: 23px;
+    padding-left: 5px;
+    font-weight: 200;
+}
+
+.inputText:focus {
+    font-size: 23px;
+    color: #767676;
+}
+
+.loginBtn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 50px;
+    border: 1px solid #2E2E2E;
+    background-color: #2E2E2E;
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.registerLink {
+    margin-left: 65px;
+}
+
+.registerLink a {
+    font-weight: bold;
+}
