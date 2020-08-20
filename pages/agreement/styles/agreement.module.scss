@@ -1,0 +1,66 @@
+.mainLogo {
+    margin-top: 80px;
+    margin-left: 93px;
+    width: 153px;
+    height: 73px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    height: 70vh;
+}
+
+.agreementCard {
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 376px;
+    width: 931px;
+    text-align: center;
+    box-shadow: 1px 1px 10px #00000029;
+    border-radius: 17px;
+    opacity: 1;
+}
+
+.agreeTitle {
+    font-size: 40px;
+    margin-top: 70px;
+    color: #716E6E;
+    font-weight: bold;
+}
+
+.agreeDesc {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 27px;
+    color: #716E6E;
+}
+
+.agreeBtn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 50px;
+    border: 1px solid #2E2E2E;
+    background-color: #2E2E2E;
+    color: white;
+    font-size: 23px;
+    margin-top: 53px;
+    outline: none;
+    cursor: pointer;
+}

@@ -1,0 +1,65 @@
+.mainLogo {
+    margin-top: 80px;
+    margin-left: 93px;
+    width: 153px;
+    height: 73px;
+}
+
+.navigation {
+    margin-top: 60.5px;
+    margin-left: 113.5px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul > li {
+    display: inline;
+    padding-right: 40px;
+    padding-left: 4px;
+    font-size: 17px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border-bottom: 1px solid grey;
+    color: #716E6E;
+}
+
+.navigation ul > li.active {
+    border-bottom: 5px solid black;
+    color: black;
+    padding-bottom: 1px;
+}
+
+.tableDiv {
+    margin-top: 86px;
+    width: 1688px !important;
+    height: 654px !important;
+    margin-left: 113.5px !important;
+    margin-right: 113.5px !important;
+}
+
+.table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .table tr:nth-child(even){background-color: #F6FAFC;}
+  
+  .table tr:hover {background-color: #ddd;}
+  
+  .table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #6E6E6E;
+    color: white;
+  }
