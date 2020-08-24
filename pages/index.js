@@ -14,7 +14,7 @@ export default function Home() {
         <img src="/images/location-icon-png-4234.png" className={styles.homLogo} alt="Track Me logo" />
         <h1 className={styles.title}>
         <span className={styles.welcome}>Welcome to{' '}</span>
-        <span class={styles.animate + ' ' + styles.six}>
+        <span className={styles.animate + ' ' + styles.six}>
           <a href="/login">
               <span>T</span><span>r</span><span>a</span><span>c</span> 
               <span>k</span>&nbsp;<span>M</span><span>e</span>&nbsp;<span>A</span>
