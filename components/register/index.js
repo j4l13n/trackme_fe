@@ -5,11 +5,19 @@ import styles from './styles/register.module.scss';
 import RegisterForm from './registerForm';
 import validator from '../../lib/validator';
 import {REGISTER} from '../../graphQL/auth/register';
-import {AuthContext} from '../../pages/_app'
+import { AuthContext } from '../../pages/_app';
 
 const RegisterComponent = () => {
     const [inputs, setInputs] = useState({})
     const [errors, setErrors] = useState({})
+
+    const {state} = useContext(AuthContext);
+
+    // useEffect(() => {
+    //     if (state.isAuthenticated) {
+    //         Router.replace('/now');
+    //     }
+    // });
 
     const [registerUser, {loading}] = useMutation(REGISTER, {
         onCompleted: (data) => {
