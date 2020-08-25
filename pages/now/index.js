@@ -1,7 +1,7 @@
 import styles from './styles/now.module.scss'
 import dynamic from 'next/dynamic';
 
-const DynamicComponentWithNoSSR = dynamic(() => import('../../components/Map'),{ ssr: false });
+const DynamicComponentWithNoSSR = dynamic(() => import('../../components/map/Map'),{ ssr: false });
 
 const Now = () => (
     <div>
