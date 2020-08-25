@@ -40,6 +40,7 @@ function App({ Component, pageProps }) {
       const currentTime = Date.now() / 1000
 
       if (user.exp < currentTime) {
+        console.log(user.exp);
         removeToken()
       } else {
         dispatch({type: 'SET_CURRENT_USER', payload: {token: localStorage.token, user}})
