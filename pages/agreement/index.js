@@ -1,9 +1,39 @@
+import React, {useState, useContext, useEffect} from 'react'
+import Router from 'next/router';
+import {useMutation} from '@apollo/react-hooks';
 import styles from './styles/agreement.module.scss';
+import {AGREEMENT} from '../../graphQL/auth/agreement'
+import {AuthContext} from '../../pages/_app'
+
 
 const Agreement = () => {
+    const [state] = useContext(AuthContext)
 
-    const handleAgreement = () => {
-        console.log("Agreement button clicked")
+    const [userAgreement, {loading}] = useMutation(AGREEMENT, {
+        onCompleted: data => {
+            if (data.agreement.success && data.agreement.success.length) {
+                Router.push('/now')
+            } else {
+                console.log(error)
+            }
+        },
+        onError: error => {
+            // console.log(error)
+        }
+    })
+
+    const handleAgreement = (e) => {
+        e.preventDefault()
+        // send the mutation of agreement to the backend
+        try {
+            userAgreement({
+                variables: {
+                    agreement: "ALLOWED"
+                }
+            })
+        } catch (error) {
+            console.log(error)
+        }
     }
 
     return (

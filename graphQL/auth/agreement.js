@@ -4,7 +4,9 @@ export const AGREEMENT = gql`
     mutation Agreement(
         $agreement: String!
     ){
-        agreement(agreement: $agreement) {
+        agreement(
+            agreement: $agreement
+        ) {
             success
         }
     }
