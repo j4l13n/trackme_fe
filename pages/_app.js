@@ -7,6 +7,7 @@ import {ApolloProvider} from '@apollo/react-hooks';
 import {Provider} from 'next-auth/client';
 import {useApollo} from '../lib/apolloClient';
 import {reducer} from '../lib/reducer'
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 export const AuthContext = React.createContext();
 
